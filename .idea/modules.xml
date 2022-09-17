@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/weed-bacon.iml" filepath="$PROJECT_DIR$/.idea/weed-bacon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/weedbacon.iml" filepath="$PROJECT_DIR$/.idea/weedbacon.iml" />
     </modules>
   </component>
 </project>
