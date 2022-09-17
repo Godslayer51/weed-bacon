@@ -3,6 +3,11 @@ from flask import Flask, render_template, redirect, url_for
 from flask import request
 app = Flask(__name__)
 
+@app.route('/payload_receiver', methods=['POST'])
+def payload_receiver():
+    print(request.form)
+    return redirect(url_for('index'))
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     '''
