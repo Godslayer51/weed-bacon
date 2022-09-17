@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/payload_receiver', methods=['POST'])
 def payload_receiver():
     print("Reloading project")
-    print("Test successful")
+    print("Test successful 2")
     subprocess.Popen("git pull",shell=True)
     subprocess.Popen("sudo ps aux |grep gunicorn |grep projectname | awk '{ print $2 }' |xargs kill -HUP", shell=True)
     return "ok"
