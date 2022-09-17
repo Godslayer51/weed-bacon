@@ -1,12 +1,14 @@
 
 from flask import Flask, render_template, redirect, url_for
 from flask import request
+import subprocess
+
 app = Flask(__name__)
 
 @app.route('/payload_receiver', methods=['POST'])
 def payload_receiver():
-    print(request.form)
-    return redirect(url_for('index'))
+    subprocess.Popen("git pull",shell=True)
+    return "ok"
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
